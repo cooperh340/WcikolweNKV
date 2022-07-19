@@ -6,7 +6,6 @@ services:
     region: oregon
     branch: master
     envVars:
-      - key: ENDPOINT
         value: true
       - key: TRUST_PROXY_HEADER
         value: true
@@ -20,6 +19,5 @@ services:
           property: connectionString
 
 databases:
-  - name: logto-database
     databaseName: logto
     ipAllowList: [] # only allow internal connections
